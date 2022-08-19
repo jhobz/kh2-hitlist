@@ -1,0 +1,15 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": "./",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"rootDir": "src/extension",
+		"outDir": "dist/extension",
+		"paths": {
+			"*": ["./node_modules/*", "./types/*"]
+		},
+		"skipLibCheck": true
+	},
+	"include": ["src/extension/**/*.ts"],
+}
