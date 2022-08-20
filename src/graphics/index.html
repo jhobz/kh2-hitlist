@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<style>
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.item {
+			position: relative;
+			flex-grow: 1;
+			max-width: 128px;
+			height: 128px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			transform: translateY(100%);
+			opacity: 0;
+			transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+			overflow: hidden;
+		}
+
+		.item.show {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+
+		.item.hide {
+			display: none;
+		}
+
+		.item::after {
+			content: '';
+			position: absolute;
+			background: url('../assets/cross.png');
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+			width: 128px;
+			height: 128px;
+			display: none;
+		}
+
+		.item.done::after {
+			display: block;
+		}
+
+
+		/* IMAGES */
+
+		#axel {
+			background-image: url('../assets/axel.png')
+		}
+
+		#demyx {
+			background-image: url('../assets/demyx.png')
+		}
+
+		#drives {
+			background-image: url('../assets/drive_form.png')
+		}
+
+		#larxene {
+			background-image: url('../assets/larxene.png')
+		}
+
+		#lexaeus {
+			background-image: url('../assets/lexaeus.png')
+		}
+
+		#lingering-will {
+			background-image: url('../assets/lingering_will.png')
+		}
+
+		#luxord {
+			background-image: url('../assets/luxord.png')
+		}
+
+		#marluxia {
+			background-image: url('../assets/marluxia.png')
+		}
+
+		#pooh {
+			background-image: url('../assets/pooh.png')
+		}
+
+		#roxas {
+			background-image: url('../assets/roxas.png')
+		}
+
+		#saix {
+			background-image: url('../assets/saix.png')
+		}
+
+		#sephiroth {
+			background-image: url('../assets/sephiroth.png')
+		}
+
+		#vexen {
+			background-image: url('../assets/vexen.png')
+		}
+
+		#xaldin {
+			background-image: url('../assets/xaldin.png')
+		}
+
+		#xemnas {
+			background-image: url('../assets/xemnas.png')
+		}
+
+		#xigbar {
+			background-image: url('../assets/xigbar.png')
+		}
+
+		#zexion {
+			background-image: url('../assets/zexion.png')
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="axel" class="item"></div>
+		<div id="demyx" class="item"></div>
+		<div id="drives" class="item"></div>
+		<div id="larxene" class="item"></div>
+		<div id="lexaeus" class="item"></div>
+		<div id="lingering-will" class="item"></div>
+		<div id="luxord" class="item"></div>
+		<div id="marluxia" class="item"></div>
+		<div id="pooh" class="item"></div>
+		<div id="roxas" class="item"></div>
+		<div id="saix" class="item"></div>
+		<div id="sephiroth" class="item"></div>
+		<div id="vexen" class="item"></div>
+		<div id="xaldin" class="item"></div>
+		<div id="xemnas" class="item"></div>
+		<div id="xigbar" class="item"></div>
+		<div id="zexion" class="item"></div>
+	</div>
+	<script src="./index.ts"></script>
+</body>
+</html>

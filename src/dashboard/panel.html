@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<style>
+		input {
+			width: 50px;
+		}
+
+		input:first-of-type {
+			width: 30px;
+		}
+	</style>
+</head>
+<body>
+	<p>Current hit list: <span id="hitlist"></span></p>
+	<label for="size">Size:</label><input id="size" type="number" min="1" max="17" value="7">
+	<label for="transition">Transition time (ms):</label><input id="transition" type="number" min="0" max="2000" value="500"><br>
+	<button id="genBtn">Generate new list</button>
+	<script src="./panel.ts" defer></script>
+</body>
+</html>

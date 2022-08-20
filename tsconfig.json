@@ -4,5 +4,7 @@
 		"removeComments": true,
 		"sourceMap": true,
 		"baseUrl": "./"
-	}
+	},
+	"include": ["src/**/*"],
+	"exclude": []
 }
