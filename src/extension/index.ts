@@ -1,6 +1,6 @@
 import { NodeCG } from '../../types/nodecg'
 
-export default (nodecg: NodeCG) => {
+module.exports = (nodecg: NodeCG) => {
 	const hitlist = nodecg.Replicant('hitlist')
 	const goals = nodecg.Replicant<string[]>('goals')
 
